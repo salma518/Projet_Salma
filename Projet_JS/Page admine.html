@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="admine.css">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</head> 
+<body>
+    <section class="admin" id="Admin">
+        <h1 class="section-heading">Gestion des Plats</h1>
+        <form id="admin-form">
+            <input type="hidden" id="dish-id" value="">
+            <input type="text" id="dish-name" placeholder="Nom du Plat" required>
+            <input type="number" id="dish-price" placeholder="Prix (MAD)" required>
+            <input type="url" id="dish-image" placeholder="URL de l'image" required>
+            <button type="submit" id="submit-dish">Ajouter Plat</button>
+        </form>
+        <div class="admin-list"></div>
+    </section>
+    <script src="admine.js"></script>
+</body>
+</html>

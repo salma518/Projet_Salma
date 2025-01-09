@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="website icon" type="png" href="logo.png">
+    <link rel="stylesheet" href="style2.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+</head> 
+<body>
+    <video autoplay muted loop>
+        <source src="Vidéo 2025-01-01 à 23.41.02_78e4727e.mp4" type="video/mp4">
+    </video>
+    
+    <h1>Bienvenue sur notre site FTH</h1>
+    <div class="button-container"> 
+        <!--Client-->
+        <section class="client">
+           <input type="button" value="Client" id="btnClient" onclick="showClientForm()">
+        </section>
+
+        <!--Administrateur-->
+        <section class="admine">
+            <input type="button" value="Administrateur" class="admine" id="admine" onclick="showLoginForm()">
+        </section>
+    </div>
+
+   <!-- Formulaire de connexion Client -->
+<div class="client-form form" id="clientForm" style="display:none;">
+    <h2>Connexion Client</h2>
+    <input type="email" id="clientEmail" placeholder="Email" required>
+    <input type="password" id="clientPassword" placeholder="Mot de passe" required>
+    <input type="button" value="Se connecter" onclick="validateClientCredentials()">
+    <p class="error" id="clientErrorMessage"></p>
+    <p><a href="#" onclick="showRegistrationForm()">Nouveau client? Inscrivez-vous ici.</a></p>
+</div>
+
+<!-- Formulaire d'inscription Client -->
+<div class="registration-form form" id="registrationForm" style="display:none;">
+    <h2>Inscription Client</h2>
+    <input type="text" id="fullName" placeholder="Nom complet" required>
+    <input type="email" id="regEmail" placeholder="Email" required>
+    <input type="password" id="regPassword" placeholder="Mot de passe" required>
+    <input type="button" value="S'inscrire" onclick="registerClient()">
+    <p class="error" id="regErrorMessage"></p>
+</div>
+
+    <!-- Formulaire de connexion Administrateur -->
+<div class="login-form form" id="loginForm" style="display:none;">
+    <h2>Connexion Administrateur</h2>
+    <input type="email" id="email" placeholder="Email" required>
+    <input type="password" id="password" placeholder="Mot de passe" required>
+    <input type="button" value="Se connecter" onclick="validateAdminCredentials()">
+    <p class="error" id="errorMessage"></p>
+</div>
+
+    <script src="Validation.js"></script>
+</body>
+</html>

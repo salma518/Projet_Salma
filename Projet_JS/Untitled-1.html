@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FHT_Food</title>
+    <link rel="website icon" type="png" href="logo.png">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</head>
+<body>
+
+<!--Barre de nav-->
+
+<header class="header">
+    <a href="#" class="logo"><i class="fas fa-utensils"></i> FTH</a>
+
+    <nav class="navbar">
+        <a href="#Home">Home</a>
+        <a href="#Menu">Menu</a>
+        <a href="#Review">Review</a>
+        <a href="#footer">footer</a>
+    </nav>
+
+    <div class="icons">
+        <div class="fas fa-bars" id="menu"></div>
+        <div class="fas fa-search" id="search"></div>
+        <div class="fa-solid fa-cart-shopping" id="cart">
+            <span>0</span>
+        </div>
+        <div class="fas fa-user" id="login"></div>
+        <div class="fa-solid fa-right-to-bracket" id="logout"></div>
+    </div>
+
+    <form action="" class="search-form">
+        <input type="search" id="search-box" placeholder="Chercher">
+        <label for="search-box" class="fas fa-search"></label>
+    </form>
+
+ <div class="overlay" id="overlay"></div>
+<div class="login-form" id="login-form">
+</div>
+
+
+<div class="overlay" id="overlay"></div>
+<div class="logout-form" id="logout-form">
+    <h1>Pour se Déconnecter</h1>
+    <button id="dec">Déconnexion</button>
+</div>
+
+</header>
+
+<!--Cover-->
+
+<section class="cover" id="Home">
+    <div class="cover--overlay">
+        <h1>Welcome to FTH</h1>
+        <span class="slogan">Des ingrédients frais, Des sourires garantis</span>
+    </div>
+</section>
+
+<!--Menu Section-->
+<section class="Menu" id="Menu">
+    <h1 class="section-heading">Food <span>Menu</span> </h1>
+    <div class="card--list"></div>
+
+    <div class="sidebar" id="sidebar">
+        <div class="sidebar-close">
+            <i class="fa-solid fa-close"></i>
+        </div>
+        <div class="cart-menu">
+            <h3>Ma Carte</h3>
+            <div class="cart-items"></div> 
+        </div>
+        <div class="sidebar--footer">
+            <div class="total--amount">
+                <h5>Total</h5>
+                <div class="cart-total">0.00 MAD</div>
+            </div>
+            <button class="checkout-btn" id="btn">Commander</button>
+        </div>
+    </div>
+</section>
+
+<!--Review Section-->
+
+<section class="Review" id="Review">
+
+<h1 class="section-heading">customer's <span>Review</span></h1>
+
+<div class="review-slider">
+
+    <div class="warpper">
+        <div class="box">
+            <img src="hiba.jpg" alt="">
+            <p>Un endroit charmant avec une ambiance agréable. Les plats sont savoureux et le service impeccable. Je recommande vivement !</p>
+            <h3>Saghiir Hiba</h3>
+            <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
+            </div>
+    </div>
+            
+    <div class="warpper">        
+        <div class="box">
+            <img src="0x0.webp" alt="">
+            <p>Une belle découverte ! Les saveurs étaient au rendez-vous et le personnel très attentif. J'y reviendrai sans hésiter !</p>
+            <h3>Rahel Ossman</h3>
+            <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i> 
+            </div>
+    </div>
+
+    <div class="warpper">
+        <div class="box">
+            <img src="image Salma Fathi.jpg" alt="">
+            <p>Excellent repas dans une atmosphère conviviale. Les portions étaient généreuses et le dessert était un vrai délice. À recommander !</p>
+            <h3>Fathi Salma</h3>
+            <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
+            </div>
+        </div>
+    </div>
+</div>
+</section>
+
+
+<!--Footer Section-->
+
+<section class="footer" id="footer">
+    
+ <h1 class="section-heading">Footer's <span>Page</span></h1>
+    <div class="box-container">
+
+        <div class="box">
+            <h3> FTH <i class="fas fa-shopping-basket"></i></h3>
+            <p>Un restaurant au décor accueillant, proposant des plats savoureux préparés avec
+             des ingrédients frais. L'atmosphère est conviviale, parfaite pour un repas entre amis. </p>
+
+            <div class="share">
+                <a href="#" class="fab fa-facebook-f"></a>
+                <a href="#" class="fab fa-twitter"></a>
+                <a href="#" class="fab fa-instagram"></a>
+                <a href="#" class="fab fa-linkedin"></a>
+            </div>
+        </div>
+
+        <div class="box">
+            <h3>Contact</h3>
+            <a href="#" class="links"><i class="fas fa-phone"></i>+212 6********</a>
+            <a href="#" class="links"><i class="fas fa-envelope"></i>salma.fathi16000@gmail.com</a>
+            <a href="#" class="links"><i class="fas fa-map-marker-alt"></i> Morocco, Casablanca, Oulfa - 128 </a>
+        </div>
+
+        <div class="box">
+            <h3>Lien Du Page</h3>
+            <a href="#Home" class="links"><i class="fas fa-arrow-right"></i>Home</a>
+            <a href="#Menu" class="links"><i class="fas fa-arrow-right"></i>Menu</a>
+            <a href="#Review" class="links"><i class="fas fa-arrow-right"></i>Review</a>
+        </div>
+
+        <div class="box">
+            <h3>Bulletins d'Information</h3>
+            <p>Abonnez-vous pour les dernières mises à jour</p>
+            <textarea name="cmt" placeholder="Votre Commantaire" class="cmt"></textarea>
+            <input type="submit" value="Envoyer" class="btn" id="submit">
+            <img src="Moyen de pay.png" class="payment-img" alt="">
+
+        </div>
+        
+    </div>
+
+    <div class="credit">Creer Par <span>Fathi Salma </span></div>
+
+</section>
+
+
+<script src="script.js"></script>
+
+</body>
+</html>
