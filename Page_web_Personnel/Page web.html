@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profil_avance.html</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<header>
+    <h1><i>Salma Fathi</i></h1>
+</header>
+
+<body>
+    <section>
+        <h2><i>1. A propos de moi</i></h2>
+        <p class="Paragraphe">Je m'appelle Salma Fathi, j'ai 19 ans et je suis étudiante en troisième année en génie informatique à l'EMSI. 
+           Passionnée par les technologies et le développement logiciel, je m'investis dans mes études
+           et des projets pratiques pour renforcer mes compétences  et contribuer à l'innovation dans
+           le secteur.</p>
+           <img src="image Salma Fathi.jpg" class="profile-pic">
+           
+    </section>
+
+    <section>
+        <h2><i>2. Hobbies et Objectifs</i></h2>
+        <h3><i>Hobbies:</i></h3>
+        <ul>
+            <li>Photographie : Capturer des moments et explorer la créativité à travers l'objectif.</li>
+            <li>Cuisine : Expérimenter de nouvelles recettes et découvrir des cuisines du monde</li>
+            <li>Arts plastiques : Peindre ou dessiner pour exprimer ma créativité</li>
+        </ul>
+        <h3><i>Objectifs:</i></h3>
+        <ol>
+            <li>Obtenir mon diplôme en génie informatique avec mention.</li>
+            <li>Acquérir de l'expérience grâce à des stages dans des entreprises technologiques.</li>
+            <li>Développer mes compétences en intelligence artificielle et en machine learning</li>
+        </ol>
+    </section>
+
+    <section>
+        <h3><i>Tableau d'Amis</i></h3>
+        <table border='1' cellpadding='20'>
+            <tr>
+                <th>Nom</th>
+                <th>Age</th>
+                <th>Ville</th>
+                <th>Profil</th>
+            </tr>
+            <tr>
+                <td>Hiba Saghir</td>
+                <td>19 ans</td>
+                <td>Casablanca</td>
+                <td><a href="https://github.com/Hiba-saghir/page_web_personnelle">Voir le profile</a></td>
+            </tr>
+            <tr>
+                <td>Laila Chakir</td>
+                <td>19 ans</td>
+                <td>Berrchid</td>
+                <td><a href="Page web.html">Voir le profile</a></td>
+            </tr>
+            <tr>
+                <td>RAnia Ahaga</td>
+                <td>19 ans</td>
+                <td>Settat</td>
+                <td><a href="Page web.html">Voir le profile</a></td>
+            </tr>
+
+        </table> 
+    </section>
+
+    <section>
+        <h2><i>Contactez-moi</i></h2>
+            <form id="contactForm">
+                <input type="text" id="name" placeholder="Votre nom" required>
+                <input type="email" id="email" placeholder="Votre email" required>
+                <textarea id="message" placeholder="Votre message" required></textarea>
+                <button type="submit"><i>Envoyer</i></button>
+            </form>
+        
+            <script>
+
+               document.getElementById('contactForm').addEventListener('submit', function(event) {
+    event.preventDefault();
+
+    const name = document.getElementById('name').value;
+    const email = document.getElementById('email').value;
+    const message = document.getElementById('message').value;
+
+    if (name === '') {
+        alert('Veuillez entrer votre nom.');
+        return;
+    }
+
+    const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    if (!emailPattern.test(email)) {
+        alert('Veuillez entrer un email valide.');
+        return;
+    }
+
+    if (message === '') {
+        alert('Veuillez entrer votre message.');
+        return;
+    }
+
+    alert('Formulaire soumis avec succès !');
+});
+            </script>
+        </form>
+    </section>
+
+    
+</body>
+</html>

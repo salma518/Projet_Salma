@@ -1,0 +1,95 @@
+body{
+    background-color:rgba(243, 205, 235, 0.151);
+}
+
+header{
+    text-align: center;  
+    color: rgba(233, 0, 163, 0.929);
+    text-decoration: underline; 
+    
+}
+
+section {
+    margin-bottom: 20px;
+    padding: 20px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    width: 80%; 
+    margin-left: 10%;
+}
+.profile-pic {
+    max-width: 200px; 
+    border-radius: 100%; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+    transition: transform 0.3s; 
+    left: 75%;
+    top: 3.5%;
+    margin-top: 55px;
+    position: absolute; 
+    box-shadow: #0700007b;
+
+
+}
+
+.profile-pic:hover {
+    transform: scale(1.05); 
+}
+
+.Paragraphe{
+    margin-right: 50%;
+}
+
+h2{
+    color: rgb(173, 12, 100);
+    text-decoration: underline;
+    margin-left: 3%;
+    
+}
+
+h3{
+    color: rgb(229, 11, 185);
+    text-decoration: underline;
+}
+
+table{
+    margin-left: 25%;
+}
+
+th {
+    background-color: #f595d57d;
+    color: white;
+}
+
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-top: 10px;
+}
+
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    border-radius: 50px;
+}
+input, textarea, button {
+    margin: 10px 0;
+    padding: 10px;
+    width: 80%; 
+    max-width: 400px; 
+    border-radius: 50px;
+
+    
+}
+
+button:hover {
+    background-color: rgba(255, 0, 195, 0.559);
+    cursor: pointer;
+
+}
